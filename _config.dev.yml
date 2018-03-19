@@ -18,9 +18,9 @@ text_color_theme: default #eg: default | dark | forest | ocean | chocolate | ora
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 
 baseurl: /
-title: Someone's blog
+title: 王寧的小窝
 description: > #this means to ignore newlines until "nav_lists:"
-  Someone's Blog
+  王寧的小窝
 
 nav_lists:
   - titles:
@@ -39,7 +39,7 @@ paths:
   # rss:  /feed.xml
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: someone/someone.github.io
+repository: wning8258/wning8258.github.io
 repository_tree: master
 
 ## Language & timezone ##
@@ -48,13 +48,13 @@ timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_t
 
 ## Author & social ##
 author:
-  name: Someone
-  email: someone@somemail.com  #your Email address e.g. someone@site.com
-  facebook: someone  #your Facebook username
-  twitter: someone  #your Twitter username
-  github: someone  #your GitHub username
+  name: wning8258
+  email:   #your Email address e.g. someone@site.com
+  facebook:  #your Facebook username
+  twitter: #your Twitter username
+  github: wning8258  #your GitHub username
   googleplus:   #your Google+ username
-  weibo:   #your Weibo username
+  weibo:  wning8258 #your Weibo username
   douban:   #your Douban username
   linkedin:   #your Linkedin username
 

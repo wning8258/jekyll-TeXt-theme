@@ -15,9 +15,9 @@ text_color_theme: default #eg: default | dark | forest | ocean | chocolate | ora
 ## Base settings ##
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: 王寧的小窝
+title: Someone's blog
 description: > #this means to ignore newlines until "nav_lists:"
-  王寧的小窝
+  Someone's Blog
 
 nav_lists:
   - titles:
@@ -38,12 +38,12 @@ nav_lists:
 # repository_tree:  #e.g. master
 
 ## Language & timezone ##
-lang: zh #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
 timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 ## Author & social ##
 author:
-  name: wangning
+  name: Someone
   # email:  #your Email address e.g. someone@site.com
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
