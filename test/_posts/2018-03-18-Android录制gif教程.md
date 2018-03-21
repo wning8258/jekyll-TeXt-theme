@@ -47,11 +47,11 @@ ffmpeg -i test.mp4 -s 720*1280 test_out.mp4
 ffmpeg  -ss 3 -t 5 -r 15 -i test_out.mp4 test_out.gif
 ```
 
--ss 3 :从第三秒开始
+-ss 3 :从第三秒开始（可选）
 
--t 5:截取3秒后的5秒时长
+-t 5:截取3秒后的5秒时长（可选）
 
--r 15 设定帧数
+-r 15 设定帧数（可选）
 
 这样 gif就完成了。
 
