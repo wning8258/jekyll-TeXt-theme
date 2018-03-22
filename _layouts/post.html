@@ -51,10 +51,26 @@ layout: base
 					<div class="article-next"><span>{{ __return }}</span><a href="{{ href }}">{{ page.previous.title }}</a></div>
 				{%- endif -%}
 			</div>
-			{%- if jekyll.environment != "development" and page.comment != false -%}
-				<section>{%- include utils/comment-disqus.html -%}</section>
-				<section>{%- include utils/comment-gitalk.html -%}</section>
-			{%- endif -%}
+			<!-- {%- if jekyll.environment != "development" and page.comment != false -%} -->
+			<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+ <script type="text/javascript">
+		var gitalk = new Gitalk({
+
+		// gitalk的主要参数
+		clientID: '188350d941c3ef49c630',
+		clientSecret: '5761934600de42f21d48342598edde9a1420b611',
+		repo: 'gitalkDemo',
+		owner: 'wning8258',
+		admin: ['wning8258'],
+		id: 'window.location.pathname',
+
+		});
+		gitalk.render('gitalk-container');
+</script>
+			<!-- {%- endif -%} -->
 		</div>
 	</div>
 </div>

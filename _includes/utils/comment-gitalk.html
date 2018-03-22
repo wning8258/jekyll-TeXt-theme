@@ -1,13 +1,13 @@
-{%- if site.disqus.shortname == nil and site.gitalk.clientID and site.gitalk.clientSecret and site.gitalk.repository and site.gitalk.owner and site.gitalk.admin and page.key -%}
+<!-- {%- if site.disqus.shortname == nil and site.gitalk.clientID and site.gitalk.clientSecret and site.gitalk.repository and site.gitalk.owner and site.gitalk.admin and page.key -%} -->
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}
 <div id="js-gitalk-container"></div>
-{%- assign admin = '' -%}
+<!-- {%- assign admin = '' -%}
 {%- for adminId in site.gitalk.admin -%}
 	{%- assign admin = admin | append: ", '" | append: adminId | append: "'" -%}
 {%- endfor -%}
 {%- assign last = admin | size | minus: 1 -%}
-{%- assign admin = admin | slice: 2, last -%}
+{%- assign admin = admin | slice: 2, last -%} -->
 <script>
 	window.Lazyload.css('{{ _sources.gitalk.css }}');
 	window.Lazyload.js('{{ _sources.gitalk.js }}', function() {
@@ -16,10 +16,10 @@
 			clientSecret: '{{ site.gitalk.clientSecret }}',
 			repo: '{{ site.gitalk.repository }}',
 			owner: '{{ site.gitalk.owner }}',
-			admin: [{{ admin }}],
+			admin: ['wning8258'],
 			id: '{{ page.key }}'
 		});
 		gitalk.render('js-gitalk-container');
 	});
 </script>
-{%- endif -%}
+<!-- {%- endif -%} -->

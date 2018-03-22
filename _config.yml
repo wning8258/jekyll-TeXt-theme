@@ -71,7 +71,7 @@ disqus:
 gitalk:
   clientID: 188350d941c3ef49c630 #Github Application Client ID
   clientSecret: 5761934600de42f21d48342598edde9a1420b611 #Github Application Client Secret
-  repo: gitalkDemo #Github repo
+  repository: gitalkDemo #Github repo
   owner: wning8258 #Github repo owner
   admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
     - wning8258
