@@ -221,3 +221,7 @@ buildcontroller()里增加了重试和监听一些逻辑，创建controller的�
     return supplier;
   }
 ```
+
+这里的DataSource跟java的Future类似，具体可查看：
+
+[DataSource]: http://wning8258.com/2018/03/22/Android-Fresco%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90(2)-DataSource.html
