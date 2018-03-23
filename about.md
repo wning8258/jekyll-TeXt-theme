@@ -7,11 +7,8 @@ titles:
   zh-Hant: 關於
 key: page-about
 ---
+##### 老家山东东阿，13年毕业，安卓开发，欢迎技术交流或者乱七八糟
 
-Just say something about yourself. :+1:
 
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}
 
-## title
+![](http://oon96myva.bkt.clouddn.com/md/ajmaq.JPG)
