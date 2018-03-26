@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Fresco源码解析(1)-初始化
-key: 20180321
+key: 20180320
 tags: Android Fresco
 typora-copy-images-to: ipic
 ---

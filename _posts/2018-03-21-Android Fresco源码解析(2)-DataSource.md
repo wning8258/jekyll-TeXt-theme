@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Fresco源码解析(2)-DataSource
-key: 20180322 Android Fresco源码解析(2)-DataSource
+key: 20180321 Android Fresco源码解析(2)-DataSource
 tags: Android Fresco
 typora-copy-images-to: ipic
 ---
@@ -99,7 +99,7 @@ DataSubscriber 会响应数据的四种变化。
 
 使用Executor来通知观察者是比较高明的，这样做可以让回调方法的执行线程交由 DataSubscriber 来处理，增加了灵活性。
 
-AbstractDataSource是DataSource的抽象实现，它管理了事件的各种状态，并且当状态变化时，会发送通知。 
+AbstractDataSource是DataSource的抽象实现，它管理了事件的各种状态，并且当状态变化时，会发送通知。
 官方也建议其他的DataSource都继承AbstractDataSource
 
 ```
@@ -165,7 +165,7 @@ public abstract class AbstractDataSource<T> implements DataSource<T> {
 
 ```
 
-  protected boolean setResult(@Nullable T value, boolean isLast) {
+  protected boolean setResult(@Nullable T value, boolean isLast) {  //成功
     boolean result = setResultInternal(value, isLast);
     if (result) {
       notifyDataSubscribers();
@@ -173,7 +173,7 @@ public abstract class AbstractDataSource<T> implements DataSource<T> {
     return result;
   }
 
-  protected boolean setFailure(Throwable throwable) {
+  protected boolean setFailure(Throwable throwable) { //失败
     boolean result = setFailureInternal(throwable);
     if (result) {
       notifyDataSubscribers();
@@ -181,14 +181,14 @@ public abstract class AbstractDataSource<T> implements DataSource<T> {
     return result;
   }
 
-  protected boolean setProgress(float progress) {
+  protected boolean setProgress(float progress) {  //进度改变
     boolean result = setProgressInternal(progress);
     if (result) {
       notifyProgressUpdate();
     }
     return result;
   }
-  
+
    private void notifyDataSubscribers() {
     final boolean isFailure = hasFailed();
     final boolean isCancellation = wasCancelled();
@@ -224,12 +224,11 @@ private void notifyDataSubscriber(
           new Runnable() {
             @Override
             public void run() {
-              subscriber.onProgressUpdate(AbstractDataSource.this);
+              subscriber.onProgressUpdate(AbstractDataSource.this);  //进度更新
             }
           });
     }
   }
-
 ```
 
 ### 2.DataSubscriber
