@@ -13,15 +13,15 @@ tags: Android Gif
 
 打开logcat,如图
 
-![屏幕快照 2018-03-20 14.12.16](http://oon96myva.bkt.clouddn.com/md/3da8b.jpg)
+![屏幕快照 2018-03-20 14.12.16](https://ws1.sinaimg.cn/large/006tNbRwgy1fx8xwfptpfj31kk0l4n1u.jpg)
 
 点击左下角的按钮，就会弹出录制页面，默认会使用手机的分辨率进行录制，最长时长3分钟，什么也不填的话，会采用默认配置。点击Start Recording开始录制：
 
-![](http://oon96myva.bkt.clouddn.com/md/h4h18.png)
+![](https://ws1.sinaimg.cn/large/006tNbRwgy1fx8xyb8oj8j30uc0a6aa6.jpg)
 
 点击Stop REcording即可结束录制，弹出保存对框框：
 
-![](http://oon96myva.bkt.clouddn.com/md/7wyws.png)
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fx8xyfjqixj313k0ok404.jpg)
 
 录制视频就完成了
 
@@ -57,4 +57,4 @@ ffmpeg  -ss 3 -t 5 -r 15 -i test_out.mp4 test_out.gif
 
 看一下效果：
 
-![](http://oon96myva.bkt.clouddn.com/md/owatc.gif)
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fx8xz931zgg30k00zk7wm.gif)
