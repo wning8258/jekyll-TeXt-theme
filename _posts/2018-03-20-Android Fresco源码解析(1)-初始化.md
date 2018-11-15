@@ -31,7 +31,7 @@ Freso初始化的时候调用以下代码：
 
 既然本身就是一个图片加载组件，那么一图胜千言。
 
-![453B5E84-FEDD-4770-BDA9-1F775FC8877A](http://oon96myva.bkt.clouddn.com/md/6yguy.png)
+![453B5E84-FEDD-4770-BDA9-1F775FC8877A](https://raw.githubusercontent.com/wning8258/pics/master/6yguy.png)
 
 `ImagePipeline` 可以从本地文件加载文件，也可以从网络。支持PNG，GIF，WebP, JPEG.
 

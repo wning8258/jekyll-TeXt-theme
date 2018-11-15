@@ -31,7 +31,7 @@ Fresco加载图片需要调用`SimpleDraweeView`的`setImageURI`方法
 
 PipelineDraweeControllerBuilder的继承关系如下：
 
-![2684B59F-72D9-4560-B602-9679B76D9C0A](http://oon96myva.bkt.clouddn.com/md/nkqt4.png)
+![2684B59F-72D9-4560-B602-9679B76D9C0A](https://raw.githubusercontent.com/wning8258/pics/master/nkqt4.png)
 
 # 1.PipelineDraweeControllerBuilder初始化
 
@@ -339,7 +339,7 @@ emmmm...是不是感觉快出来点东西了，我们看到一个很重要的东
 
 `mProducerSequenceFactory`是个什么？在哪创建的?
 
-![](http://oon96myva.bkt.clouddn.com/md/cz7qa.png)
+![](https://raw.githubusercontent.com/wning8258/pics/master/cz7qa.png)
 
 可以看到，在Fresco初始化的时候，`mProducerSequenceFactory`就被创建了。
 
@@ -360,7 +360,7 @@ ProducerSequence从字面意思来看，就是生产者序列，这里先列一�
 
 fresco加载图片的时候，从1-12依次查找，如果某个Producer里
 
-![E430B151-6E5F-4CBA-9076-AC0D8920E3FB](http://oon96myva.bkt.clouddn.com/md/4fjk4.png)
+![E430B151-6E5F-4CBA-9076-AC0D8920E3FB](https://raw.githubusercontent.com/wning8258/pics/master/4fjk4.png)
 
 #### 1.三级缓存
 
@@ -1179,7 +1179,7 @@ public abstract class AbstractProducerToDataSourceAdapter<T> extends AbstractDat
 
 看到了吧，第23行，在构造方法里，调用了`Producer`的`produceResults`,这样`Producer`的流程就串联起来了:
 
-![58EE2FC6-8B6A-4A09-ADBA-2C17DE085D10](http://oon96myva.bkt.clouddn.com/md/hlqh9.png)
+![58EE2FC6-8B6A-4A09-ADBA-2C17DE085D10](https://raw.githubusercontent.com/wning8258/pics/master/hlqh9.png)
 
 另一方面，最初的`Consumer`也是在这创建的，在`createConsumer`方法里创建了匿名内部类继承了`BaseConsumer`,`BaseConsumer`对`Consumer`的方法进行了异常处理，自定义的`Consumser`都推荐继承该类，上边看到的`DelegatingConsumer`也是继承于此。
 
@@ -1248,7 +1248,7 @@ private void notifyDataSubscribers() {
 
 到这里，可能都已经忘了前边的逻辑，现在回顾一下：
 
-![C8A165B9-E450-45C0-AC7E-2604398E8FFF](http://oon96myva.bkt.clouddn.com/md/27sfq.png)
+![C8A165B9-E450-45C0-AC7E-2604398E8FFF](https://raw.githubusercontent.com/wning8258/pics/master/27sfq.png)
 
 现在到了第11步...
 
@@ -1311,7 +1311,7 @@ public class DraweeHolder<DH extends DraweeHierarchy> implements VisibilityCallb
 2. Model对应`DraweeHierarchy`类，其负责持有数据，用一个层级组织和维护最终绘制和显示的图片。 
 3. Controller对应`DraweeController`类，其负责控制数据的逻辑。
 
-![D12B1518-FFC4-4000-9953-83508D35C1A3](http://oon96myva.bkt.clouddn.com/md/dx2ml.png)
+![D12B1518-FFC4-4000-9953-83508D35C1A3](https://raw.githubusercontent.com/wning8258/pics/master/dx2ml.png)
 
 从DraweeHolder的注释可以看出，这是一个解耦的设计，当我们想自己定义一个 `ImageView` 而不是使用 `DraweeView` 时，通过 `ViewHolder` 一样可以使用其他两个组件.
 
@@ -1545,7 +1545,7 @@ private void attachController() {
 
 具体实现在`DrawableHierarchy`的子类`GenericDraweeHierarchy`中,先看下这个类的定义:
 
-![909141F1-9AAE-4AD2-B1D0-4C5DBA1CD870](http://oon96myva.bkt.clouddn.com/md/b89by.png)
+![909141F1-9AAE-4AD2-B1D0-4C5DBA1CD870](https://raw.githubusercontent.com/wning8258/pics/master/b89by.png)
 
  可以看出来，fresco显示图片的时候，用到了很多层级，占位图片，失败时的图片，重试时的图片，进度图片，所有的层级drawable都在`FadeDrawable`中
 
