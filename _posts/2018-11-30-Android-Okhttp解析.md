@@ -24,6 +24,8 @@ Using OkHttp is easy. Its request/response API is designed with fluent builders 
 
 OkHttp supports Android 2.3 and above. For Java, the minimum requirement is 1.7.
 
+<!--more-->
+
 OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享同一个socket，通过连接池来减小响应延迟，
 
 还有透明的GZIP压缩，请求缓存等优势，其核心主要有路由、连接协议、拦截器、代理、安全性认证、连接池以

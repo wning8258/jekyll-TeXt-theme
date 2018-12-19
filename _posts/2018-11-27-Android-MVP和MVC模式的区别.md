@@ -13,6 +13,8 @@ V 指视图层（对应Android中的Layout或者自定义View）
 
 C 指控制层（对应Android中的Activity/Fragment）
 
+<!--more-->
+
 在Android中，Activity/Fragment既充当控制层又充当视图层，这就导致了V和C这两层耦合在一起，当业务比较复杂时，Activity/Fragment文件就很庞大，导致难以维护和测试，这时就可以MVP模式
 
 ![8697741-9990956472185fb5](https://ws3.sinaimg.cn/large/006tNbRwgy1fxmv6hl8cyj309n0b075x.jpg)
